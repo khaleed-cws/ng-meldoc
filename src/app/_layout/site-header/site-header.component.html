@@ -1,0 +1,46 @@
+
+    <header class="site-header ">
+        <div class="nav-bar shadow">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center">
+                           <a class="d-block" routerLink="/" routerLinkActive="active" ><img class="d-block" src="assets/bootstrap-front/images/logo.png" alt="logo" width="135px"></a>
+                        </div><!-- .site-branding -->
+
+                        <nav class="site-navigation d-flex justify-content-end align-items-center">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center text-uppercase">
+                                <li><a routerLink="/login" routerLinkActive="active" >SIGN IN</a></li>
+                                <li><a routerLink="/register" routerLinkActive="active" >SIGN UP</a></li>
+                                <li><a routerLink="/help" routerLinkActive="active" >WHY JOIN</a></li>
+                                <li><a routerLink="" routerLinkActive="active" >LOGOUT</a></li>
+                            </ul>
+                            <div ngbDropdown  placement="bottom-right" class="menu-wrap" #myDrop="ngbDropdown">
+                                <a class="d-lg-flex menu-dropdown waves-light waves-effect d-sm-inline-flex flex-column flex-lg-row justify-content-lg-end align-items-center font-w5 a-yellow text-uppercase"  id="dropdownBasic1" ngbDropdownToggle>MENU&nbsp; <i class="fa fa-bars" aria-hidden="true"></i></a>
+                                <div ngbDropdownMenu aria-labelledby="menu">
+                                    <button class="dropdown-item"><span class="material-icons icon-text float-right mr-0  waves-light waves-effect" (click)="$event.stopPropagation(); myDrop.close();">close</span></button>
+                                    <button class="dropdown-item"><i class="material-icons icon">star</i> <span class="icon-text">Summary </span></button>
+                                    <button class="dropdown-item"><i class="material-icons icon">star</i> Booking details</button>
+                                    <button class="dropdown-item"><i class="material-icons icon">star</i> Leave plan</button>
+                                    <button class="dropdown-item"><i class="material-icons icon">star</i> Insurence policy</button>
+                                    <button class="dropdown-item"><i class="material-icons icon">star</i> Journals / Publications</button>
+                                    <button class="dropdown-item"><i class="material-icons icon">star</i> Conference and cme points</button>
+                                    <button class="dropdown-item"><i class="material-icons icon">star</i> Upcoming Conference</button>
+                                </div>
+                            </div>
+                           
+
+                        </nav>
+                        <!-- .site-navigation -->
+                        
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+    </header>

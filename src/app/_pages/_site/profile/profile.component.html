@@ -1,0 +1,366 @@
+<section class="heading-striped" id="profile">
+  	<h4 class="section-header-yellow text-uppercase">
+        <div class="container">Personal details</div>
+    </h4>
+    <div class="container">
+      <div class="row">
+         <div class="col-sm-3">
+           <div class="text-center text-lg-left ">
+            <img src="./assets/bootstrap-front/images/default.png" class="img-thumbnail rounded-circle img-x-lg " alt="...">
+                  </div>
+              <div class="p-1 text-secondary">
+                 <h4>Dr.Rajesh Naidu</h4>
+                 <p>dr.rajeshnaidu.p@gmail.com<br>
+                 +91-9900000001<br>
+                 <small class="text-muted">https://www.meldoc.com/dr.rajeshnaidu</small></p>
+              </div>
+         </div>
+         <div class="col-md-9 border-left mb-3">
+            <form >
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label for="exampleInputEmail1">Specialization</label>
+                    <select class="form-control mel-input">
+                        <option>Default select</option>
+                    </select>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-8">
+                    <label for="exampleInputPassword1">Bio</label>
+                    <textarea type="text" class="form-control mel-input" id="fitbit" placeholder="" rows="4"></textarea>
+                  </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label for="inputEmail4">Country</label>
+                      <select class="form-control mel-input">
+                          <option>Default select</option>
+                          <option selected="">India</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4">State / province</label>
+                        <select class="form-control mel-input">
+                            <option>Default select</option>
+                            <option selected="">Karnataka</option>
+                        </select>
+                      </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputPassword4">city</label>
+                      <input type="text" class="form-control mel-input" id="city" placeholder="">
+                    </div>
+                  </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+         </div>
+      </div>
+    </div>
+    <h4 class="section-header-blue text-uppercase">
+        <div class="container">Personal details</div>
+    </h4>
+    <div class="container">
+      <div class="table-responsive">
+        <table class="table" >
+            <thead class="text-uppercase">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Qualification type</th>
+                  <th scope="col">Region No. / certificate No.</th>
+                  <th scope="col">Degree completion certificate</th>
+                  <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <select class="form-control mel-input">
+                      <option>SELECT SPECIALIZATIOM</option>
+                  </select>
+                </td>
+                <td>
+                  <input class="form-control mel-input" placeholder="CERTIFICATE NO">
+                </td>
+                <td >
+                  <div class="custom-file mel-input">
+                      <input type="file" class="custom-file-input " id="validatedCustomFile" required="">
+                      <label class="custom-file-label" for="validatedCustomFile">No file selected</label>
+                  </div>
+                </td>
+                <td>
+                    <button type="submit" class="btn btn-outline-secondary  waves-effect waves-light w-sm" >Save</button>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+      <button type="submit" class="btn btn-primary waves-effect waves-light mb-3">Add qualification</button>
+
+      <div class="table-responsive">
+        <table class="table" >
+            <tbody>
+              <!--header one-->
+              <tr class="text-uppercase">
+                <th scope="col">#</th>
+                <th scope="col">Accreditation Type</th>
+                <th scope="col">Region No. / certificate No.</th>
+                <th scope="col" colspan="2">certificate</th>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <select class="form-control mel-input">
+                      <option>SELECT ACCREDITATION</option>
+                  </select>
+                </td>
+                <td>
+                    <input class="form-control mel-input" placeholder="CERTIFICATE NO">
+                </td>
+                <td colspan="2">
+                  <div class="custom-file mel-input">
+                      <input type="file" class="custom-file-input " id="validatedCustomFile" required="">
+                      <label class="custom-file-label" for="validatedCustomFile">No file selected</label>
+                  </div>
+                </td>
+
+              </tr>
+              <!--header two-->
+              <tr class="text-uppercase">
+                  <th scope="col" class="bg-color-white border-0"></th>
+                  <th scope="col">Leave start date</th>
+                  <th scope="col">Country of issue</th>
+                  <th scope="col">state of issue</th>
+                  <th scope="col">Action</th>
+              </tr>
+              <tr>
+                  <td class="bg-color-white border-0"></td>
+                  <td>
+                    <div class="input-group mb-2 mr-sm-2">
+                      <input type="text" class="form-control mel-input" placeholder="YYYY-MM-DD" ngbDatepicker #stardate="ngbDatepicker">
+                      <div class="input-group-append">
+                        <button class="btn bg-c-yellow waves-effect waves-light" (click)="stardate.toggle()" type="button"><i class="fa fa-calendar"></i></button>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <select class="form-control mel-input">
+                        <option>SELECT COUNTRY</option>
+                    </select>
+                  </td>
+                  <td>
+                      <select class="form-control mel-input">
+                          <option>SELECT STATE</option>
+                      </select>
+                  </td>
+                  <td>
+                      <button type="submit" class="btn btn-outline-secondary  waves-effect waves-light w-sm" >Save</button>
+                  </td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+        <button type="submit" class="btn btn-primary waves-effect waves-light mb-3">Add Accreditation</button>
+    </div>
+    <h4 class="section-header-yellow text-uppercase">
+        <div class="container">Consultation location</div>
+    </h4>
+    <div class="container">
+      <div class="table-responsive">
+      <table class="table table-striped ">
+        <thead class="text-uppercase">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col" >Hospital name</th>
+            <th scope="col" >Day Availibility</th>
+            <th scope="col" >Consultation Fee</th>
+            <th scope="col" >Insurence accepted</th>
+            <th scope="col" >Secretary</th>
+            <th scope="col" >Sec-Phone no.</th>
+            <th scope="col" >Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Appolo</td>
+            <td>
+                <button type="button" class="btn btn-primary dropdown-toggle waves-effect waves-light btn-sm" (click)="vertical(content)">
+                    Availibility on
+                </button>
+            </td>
+            <td><span class="badge badge-info">Rs.450</span></td>
+            <td><span class="badge badge-success">YES</span></td>
+            <td>Manju Nath</td>
+            <td>9900231212</td>
+            <td><button class="btn btn-outline-secondary btn-rounded waves-effect waves-light btn-sm mr-1"><i class="fa fa-pencil"></i></button> <button class="btn btn-outline-secondary btn-rounded waves-effect waves-light btn-sm "><i class="fa fa-trash-o"></i></button></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <button class="btn btn-primary waves-effect waves-light my-3" id="Consultation" title="Consultation location" (click)="addLocation($event)">Add Location</button>
+    </div>
+   
+    <h4 class="section-header-blue text-uppercase">
+      <div class="container"> Work experience <span class="badge badge-success">2 YEARS</span></div>
+    </h4>
+    
+    <div class="container">
+        <form class="mb-3">
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="inputEmail4">Clinic / Hospital name</label>
+              <input type="email" class="form-control mel-input" id="inputEmail4" >
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputAddress">Designation</label>
+                <select id="inputState" class="form-control mel-input">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputPassword4">Loaction / City</label>
+              <input type="text" class="form-control mel-input" id="inputAddress" >
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Start Month / year</label>
+              <div class="input-group">
+                <select id="inputState" class="form-control mel-input">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+                <select id="inputState" class="form-control mel-input">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">End Month / year</label>
+              <div class="input-group">
+                <select id="inputState" class="form-control mel-input">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+                <select id="inputState" class="form-control mel-input">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-outline-secondary waves-effect waves-light mr-2 ">Save</button>
+          <button class="btn btn-primary waves-effect waves-light">Add Experience</button>
+        </form>
+        <div class="table-responsive-md">
+          <table class="table table-striped ">
+            <thead class="text-uppercase">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col" >Clinic / Hospital name</th>
+                <th scope="col" >Designation</th>
+                <th scope="col" >Location / city</th>
+                <th scope="col" >Start month/year</th>
+                <th scope="col" >End month/year</th>
+                <th scope="col" >Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Appolo</td>
+                <td>
+                    Homiosist Sr.Dr
+                </td>
+                <td><span class="badge badge-info">Mysore, KAR, IND</span></td>
+                <td>AGU / 2016</td>
+                <td>DEC / 2017</td>
+                <td><button class="btn btn-outline-secondary btn-rounded waves-effect waves-light btn-sm mr-1"><i class="fa fa-pencil"></i></button> <button class="btn btn-outline-secondary btn-rounded waves-effect waves-light btn-sm "><i class="fa fa-trash-o"></i></button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <h4 class="section-header-yellow text-uppercase">
+        <div class="container">Govt issued id card</div>
+    </h4>
+    <div class="container">
+        <form class="mb-3">
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="inputEmail4">ID card type</label>
+              <select id="inputState" class="form-control mel-input">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputAddress">id card number</label>
+                <input type="text" class="form-control mel-input" id="inputAddress" >
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputPassword4">upload policy</label>
+              <div class="custom-file">
+                  <input type="file" class="custom-file-input form-control mel-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+                  <label class="custom-file-label" for="inputGroupFile04">No file selected</label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-outline-secondary waves-effect waves-light mr-2 ">Save</button>
+          <button class="btn btn-primary waves-effect waves-light">Add Government id</button>
+        </form>
+        <div class="table-responsive-md">
+          <table class="table table-striped ">
+            <thead class="text-uppercase">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col" >Id Card type</th>
+                <th scope="col" >Id Card name/th>
+                <th scope="col" >Policy view</th>
+                <th scope="col" >Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>MANIPAL DR</td>
+                <td><span class="badge badge-info">MANI098309</span></td>
+                <td class="d-flex"><img src="./assets/bootstrap-front/images/icon/certificate.png" class="img-sm img-fluid mr-1"><button class="btn btn-outline-secondary waves-effect waves-light btn-sm" (click)="openLg(content)"> View certificate</button></td>
+                <td><button class="btn btn-outline-secondary btn-rounded waves-effect waves-light btn-sm mr-1"><i class="fa fa-pencil"></i></button> <button class="btn btn-outline-secondary btn-rounded waves-effect waves-light btn-sm "><i class="fa fa-trash-o"></i></button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+    </div>
+</section>
+
+<!--Modals-->
+<ng-template #content let-modal >
+      <div class="modal-header">
+      <h4 class="modal-title">Appolo Hospital Aailibity</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <ul  class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-center active">
+        <span><span class="fa fa-clock-o text-yellow mr-2"></span>  9:30AM - 1:30PM & 6PM - 10:30PM</span> <span>MON</span></li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span><span class="fa fa-clock-o text-yellow mr-2"></span>  9:30AM - 1:30PM & 6PM - 10:30PM</span> <span>TUE</span></li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span><span class="fa fa-clock-o text-yellow mr-2"></span>  9:30AM - 1:30PM & 6PM - 10:30PM</span> <span>WED</span></li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div><i class="fa fa-clock-o text-yellow mr-2"></i> <span class="badge badge-danger">Your in leave</span></div> <span>THUS</span></li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span><span class="fa fa-clock-o text-yellow mr-2"></span>  9:30AM - 1:30PM & 6PM - 10:30PM</span> <span>FRI</span></li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span><span class="fa fa-clock-o text-yellow mr-2"></span>  9:30AM - 1:30PM</span> <span>SAT</span></li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span><span class="fa fa-clock-o text-yellow mr-2"></span>  9:30AM - 1:30PM & 6PM - 10:30PM</span> <span>SUN</span></li>
+    </ul>
+</ng-template>

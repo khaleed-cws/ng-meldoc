@@ -1,0 +1,145 @@
+     <div class="faq-stuff">
+        <div class="container">
+            <div class="sign-up-wrap">
+            	<div class="row">
+            		<div class="col-lg-3 col-md-4 card bg-c-yellow border-less">
+            		   <div class="card-body">
+					    <h5 class="card-title text-uppercase font-weight-bold">WHY MELDOC?</h5>
+					    <ul class="list-group list-group-flush ">
+					    <li class="list-group-item  bg-c-yellow px-0">
+					    	<div class="media">
+							  <img class="mr-2 rounded-circle img-md" src="./assets/bootstrap-front/images/create-1.png" alt="Generic placeholder image">
+							  <div class="media-body">
+							    <h6 class="mt-0 mb-2">CREATE</h6>
+							   Online Profile 
+							  </div>
+							</div>
+					    </li>
+					    <li class="list-group-item bg-c-yellow px-0">
+					    	<div class="media">
+							  <img class="mr-2 rounded-circle img-md" src="./assets/bootstrap-front/images/create-2.png" alt="Generic placeholder image">
+							  <div class="media-body">
+							    <h6 class="mt-0 mb-2">MANAGE</h6>
+							   Consultations Online 
+							  </div>
+							</div>
+					    </li>
+					    <li class="list-group-item bg-c-yellow px-0">
+					    	<div class="media">
+							  <img class="mr-2 rounded-circle img-md" src="./assets/bootstrap-front/images/create-3.png" alt="Generic placeholder image">
+							  <div class="media-body">
+							    <h6 class="mt-0 mb-2">ACCEPT</h6>
+							     Payments Online
+							  </div>
+							</div>
+					    </li>
+					     
+					  </ul>
+					  </div>
+            		   
+            		</div>
+            		<div class="col-lg-9 col-md-8 card border-less pt-2">
+	            		<ngb-tabset [justify]="currentJustify" id="register">
+										<ngb-tab title="personal details" class="nav-no-bottom">
+											<ng-template ngbTabContent>
+												<div class="py-4">
+													<form  [formGroup]="RegistrationForm" id="register-form" #registerForm (ngSubmit)="onRegitser(RegistrationForm.value)" novalidate>
+														<div class="form-row">
+																<div class="form-group col-md-6">
+																	<input type="text" class="form-control" id="fname" formControlName="first_name" placeholder="First Name">
+																</div>
+																<div class="form-group col-md-6">
+																	<input type="text" class="form-control" id="lname" formControlName="last_name"  placeholder="Last Name">
+																</div>
+															
+														</div>
+														<div class="form-row">
+																<div class="form-group col-md-6">
+																	<input type="password" class="form-control" id="password" formControlName="password" placeholder="Password">
+																</div>
+																<div class="form-group col-md-6">
+																	<input type="password" class="form-control" id="confirmPassword" formControlName="confirm_password" placeholder="Confirm Password">
+																</div>
+														</div>
+														<div class="form-row">
+																<div class="form-group col-md-6">
+																	<input type="email" class="form-control" id="emailId"  formControlName="email" placeholder="Email">
+																</div>
+																<div class="form-group col-md-6">
+																	<input type="text" class="form-control" id="mobileNumber" formControlName="user_mobile" placeholder="Phone Number">
+																</div>
+														</div>
+														<div class="form-row">
+																<div class="form-group col-md-10 col-sm-8">
+																	<div class="form-check">
+																		<input class="form-check-input" type="checkbox" id="gridCheck">
+																		<label class="form-check-label text-uppercase" for="gridCheck">
+																		Doctors
+																		</label>
+																	</div>
+																</div>
+																<div class="col-md-2  col-sm-4 text-right">
+																	<button type="submit" class="btn btn-primary btn-block text-uppercase" [disabled]="!registerForm.valid">next</button>
+																</div>
+														</div>
+													
+													</form>
+												</div>
+											</ng-template>
+										</ngb-tab>
+										<ngb-tab title="contact details">
+											<ng-template ngbTabContent>
+												<div class="py-4">
+													<form id="register-form">
+												<div class="form-row">
+													<div class="form-group col-md-6">
+														<label for="inputEmail4">Phone number</label>
+														<div  class="d-block"> 9809899001</div>
+													</div>
+													<div class="form-group col-md-6">
+														<label for="inputPassword4">Email id</label>
+														<div  class="d-block">meldocinfo@gmail.com</div> 
+													</div>
+												</div>
+												<div class="form-row">
+														<div class="form-group col-md-6">
+															<input type="text" class="form-control" id="smsotp" placeholder="Enter your SMS OTP here">
+														</div>
+														<div class="form-group col-md-6">
+															<input type="text" class="form-control" id="emailotp" placeholder="Enter your EMAIL OTP here">
+														</div>
+												</div>
+												<div class="form-row">
+														<div class="form-group col-md-3">
+															<div class="d-block">http://www.meldoc.com/</div>
+														</div>
+														<div class="form-group col-md-6">
+															<input type="url" class="form-control" id="mobileNumber" placeholder="Enter your URL here">
+														</div>
+														<div class="form-group col-md-3">
+															<button type="submit" class="btn btn-primary btn-block">Set Custom URL</button>
+														</div>
+												</div>
+													<div class="form-row">
+														<div class="form-group col-md-10 col-sm-8">
+															<div class="form-check">
+																<input class="form-check-input" type="checkbox" id="gridCheck">
+																<label class="form-check-label text-uppercase" for="gridCheck">
+																I accept the terms and conditions
+																</label>
+															</div>
+														</div>
+														<div class="col-md-2  col-sm-4 text-right">
+															<button type="submit" class="btn btn-primary btn-block text-uppercase ">Finished</button>
+														</div>
+												</div>
+											</form>
+												</div>
+											</ng-template>
+										</ngb-tab>
+						  </ngb-tabset>
+				    </div>
+            	</div>
+            </div>
+        </div>
+    </div>
